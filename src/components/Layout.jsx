@@ -1,27 +1,30 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Suspense } from "react";
 import Sidebar from "./Sidebar";
-import Login from './Login';
+import Login from "./Login";
 
 export default function Layout() {
-    const [login, setLogin] = useState(true);
-    return (
+  const [login, setLogin] = useState(true);
+
+  return (
+    <>
+      {!login ? (
+        <Login login={login} setLogin={setLogin} />
+      ) : (
         <>
-        {!login ? <Login login={login} setLogin={setLogin} />
- :        <>
- <div className='flex'>
-    <div className='w-2/12'>
-            <Sidebar setLogin={setLogin}/>
+          <div className="flex">
+            <div className="w-1/5">
+              <Sidebar setLogin={setLogin} />
             </div>
-            <main className='w-5/6'>
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Outlet />
-                </Suspense>
+            <main className="w-4/5">
+              <Suspense fallback={<div>Loading...</div>}>
+                <Outlet />
+              </Suspense>
             </main>
-            </div>
-            </>
-}
+          </div>
         </>
-    )
+      )}
+    </>
+  );
 }

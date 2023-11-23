@@ -1,3 +1,29 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+
+body {
+    font-family: DM sans
+}
+
+.fullScreenHeight {
+    height: 100vh !important;
+}
+
+:where(.css-dev-only-do-not-override-nllxry).ant-table-wrapper td.ant-table-column-sort {
+    background: white;
+}
+
+:where(.css-dev-only-do-not-override-nllxry).ant-table-wrapper .ant-table-thead>tr>th,
+:where(.css-dev-only-do-not-override-nllxry).ant-table-wrapper .ant-table-thead>tr>td {
+    background: white;
+}
+
+:where(.css-dev-only-do-not-override-nllxry).ant-table-wrapper .ant-table-thead th.ant-table-column-sort {
+    background: white;
+}
+
+:where(.css-dev-only-do-not-override-nllxry).ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:hover {
+    background: white;
+}
