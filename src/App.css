@@ -27,3 +27,29 @@ body {
 :where(.css-dev-only-do-not-override-nllxry).ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:hover {
     background: white;
 }
+
+:where(.css-dev-only-do-not-override-nllxry).ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+    background-color: black !important;
+    border-radius: 25px;
+    padding: 14px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    filter: drop-shadow(0px 4px 4px rgba(96, 91, 255, 0.25));
+}
+
+:where(.css-dev-only-do-not-override-nllxry).ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border: none;
+}
+
+.calenderTable::-webkit-scrollbar {
+    width: 6px !important;
+    border-radius: 25px;
+}
+
+.calenderTable::-webkit-scrollbar-thumb {
+    background-color: darkgrey !important;
+    outline: none;
+    border-radius: 25px;
+}
