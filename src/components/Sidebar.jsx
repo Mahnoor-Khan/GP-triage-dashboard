@@ -22,10 +22,12 @@ export default function Sidebar({ setLogin }) {
   const navigate = useNavigate();
   const [activeMenuId, setActiveMenuId] = useState();
 
+  // Setting Active Menu ID
   useEffect(() => {
     setActiveMenuId(window.location.pathname);
   }, [window.location.pathname]);
 
+  // All Routes
   const routes = [
     {
       id: "/",
@@ -71,10 +73,12 @@ export default function Sidebar({ setLogin }) {
     },
   ];
 
+  // Setting Active Menu Id
   const handleMenuItemClick = (id) => {
     setActiveMenuId(id);
   };
 
+  // handeling logout functionality
   const handleLogout = () => {
     setLogin(false);
     navigate("/Login");
