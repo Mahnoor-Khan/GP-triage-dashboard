@@ -233,12 +233,12 @@ function Triages() {
                     {item.age}
                   </p>
                 </td>
-                <td className="w-[19.16%] text-[#0E72B7] text-base leading-normal">
+                <td className="w-[19.16%] text-[#06152B] text-base leading-normal">
                   {item.presentingComplaint}
                 </td>
                 <td className="w-[19.16%] flex gap-4 py-3 px-5 ">
                   <img src={calendarIcon} alt="_date" />
-                  <p className="text-[#0E72B7] text-base leading-normal">
+                  <p className="text-[#06152B] text-base leading-normal">
                     {item.date}
                   </p>
                 </td>
